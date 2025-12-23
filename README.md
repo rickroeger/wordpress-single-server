@@ -1,5 +1,5 @@
 # wordpress-single-server
-Simple terraform script to create an Wordpress Single Server
+Simple terraform script to create an Wordpress Single Server 
 
 - 1x VPC and Public Subnet
 - 1x EC2 instance

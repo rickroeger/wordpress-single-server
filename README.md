@@ -37,26 +37,13 @@ mysql_table_prefix = "wp_blue_"
 mysql_database     = "wp_blue"
 
 ```
-## 3. Prepare the Cloud Init file
-You must create the file below. It's the cloud init file. The script run on machine bootstrap
-example:
-```
-cat << EOF > cloud-init.txt
-#cloud-config
-runcmd:
-  - apt-get update
-  - apt-get install -y docker.io
-  - systemctl start docker
-  - systemctl enable docker
-EOF
-```
-## 4. Apply the Terrafor Configuration
+## 3. Apply the Terrafor Configuration
 ```
 tfswitch #switch to current terraform configuration
 terraform plan
 terraform apply
 ```
-## 5. Log on WOrdpress and finish you configuration
+## 4. Log on WOrdpress and finish you configuration
 Access the web interface and follow the step by step
 ```
 http://[dns external]:80/WordPress
